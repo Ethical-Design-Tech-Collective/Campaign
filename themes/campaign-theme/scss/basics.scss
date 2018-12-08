@@ -1,0 +1,199 @@
+body {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	color: $brand-dark;
+	max-width:100vw;
+	overflow-x: hidden;
+}
+
+input {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+input[type="submit"] {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+button {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-weight: 500;
+	color: $brand;
+	line-height: 1.2;
+}
+
+h2, h3, h4 {
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 { font-size: 50px; }
+
+h2 { font-size: 36px; }
+
+h3 { font-size: 26px; }
+
+h4 { font-size: 22px; }
+
+p, li { 
+	font-size: 18px; 
+	line-height: 1.6;
+
+	a {
+		font-weight: 500;
+	}
+}
+
+input { font-size: 18px; }
+
+p, li, h1, h2, h3, h4, h5 {
+	span.asterisk {
+		color: $brand;
+		margin-left: 0.1em;
+		margin-right: 0.1em;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	a {
+		color: $brand;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.standard-input {
+	display: block;
+	height: 52px;
+	border: 2px solid #bfbfbf;
+	background: #f6f6f6;
+	border-radius: 2px;
+	width: 320px;
+	padding: 0 12px;
+
+	&:focus {
+		border-color: #888;
+	}
+
+	&.light {
+		background: white;
+		border-color: white;
+	}
+}
+
+.standard-button {
+	display: inline-block;
+	border: 2px solid #bfbfbf;
+	background: #f6f6f6;
+	border-radius: 2px;
+	min-width: 140px;
+	color: #888;
+	border-color: #888;
+	background: #bbb;
+	padding: 14px 14px;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 500;
+	text-align: center;
+
+	&._submit {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+
+	&.compact {
+		padding: 10px 16px;
+		font-size: 18px;
+	}
+
+	&.invisible {
+		border: none;
+	}
+
+	&:hover {
+		background: $brand;
+		color: white;
+		text-decoration: none;
+	}
+
+	&.button-full {
+		background: $brand;
+		border-color: $brand;
+		color: white;
+
+		&:hover {
+			background: darken($brand, 16);
+		}
+	}
+
+	&.button-outline {
+		background: none;
+		border-color: $brand;
+		color: $brand;
+
+		&:hover {
+			background: $brand;
+			color: white;
+		}
+	}
+
+	&.button-full-light {
+		background: white;
+		border-color: white;
+		color: $brand;
+
+		&:hover {
+			background: rgba(white, 0.8);
+		}
+	}
+
+	&.button-outline-light {
+		background: none;
+		border-color: white;
+		color: white;
+
+		&:hover {
+			background: white;
+			color: $brand;
+		}
+	}
+}
+
+.columns {
+	font-size: 0;
+
+	.column {
+		display: inline-block;
+	}
+
+	&.two-columns .column {
+		width: 50%;
+	}
+	
+	&.three-columns .column {
+		width: 33.333%;
+	}
+
+	&.four-columns .column {
+		width: 25%;
+	}
+}
+
+.right-aligner {
+	text-align: right;
+}
+
+.center-aligner {
+	text-align: center;
+}
+
+

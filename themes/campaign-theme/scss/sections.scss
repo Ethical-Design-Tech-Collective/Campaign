@@ -1,0 +1,142 @@
+.section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&.some-padding {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&.more-padding {
+		padding-top: 80px;
+		padding-bottom: 90px;
+	}
+
+	&.extra-padding {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	&.last-section {
+		padding-bottom: 160px;
+	}
+
+	&.gray { 
+		background: $light-background;
+	}
+
+	&.grayer {
+		background: $grayer-background;
+	}
+
+	&.dark {
+		background: $brand-dark;
+		color: white;
+
+		h1 {
+			color: white;
+		}
+
+		a:not(.standard-button) {
+			color: white;
+		}
+	}
+
+	&.warm-dark {
+		background: $warm-dark;
+		color: white;
+
+		h1 {
+			color: white;
+		}
+
+		a:not(.standard-button) {
+			color: white;
+		}
+	}	
+
+	&.warm-darkish {
+		background: #543943;
+		color: white;
+
+		h1 {
+			color: white;
+		}
+
+		a:not(.standard-button) {
+			color: white;
+		}
+	}
+
+	&.colored-titles {
+		h1, h2, h3, h4, h5 {
+			color: $brand;
+		}
+	}
+}
+
+.section.top-section {
+	background: $light-background;
+	padding-top: 60;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: 50% 20%;
+
+    h1, h2, h3, p {
+    	color: white; 
+
+    	&:last-child {
+    		margin-bottom: 0;
+    	}
+    }
+
+    &.no-image {
+    	h1, h2, h3, p {
+    		color: $brand-dark; 
+    	}
+    }
+
+    h1 {
+    	text-align: center; 
+    } 
+}
+
+.container { 
+	max-width: 1080px; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	>:last-child {
+		margin-bottom: 0;
+	}
+
+	&.narrow {
+		max-width: 860px;
+	}
+
+	&.wide {
+		max-width: 1280px; 
+	}
+
+	&.full {
+		max-width: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.bottom-padded {
+		padding-bottom: 40px;
+	}
+
+	&.top-padded {
+		padding-top: 40px;
+	}
+
+	&.centered{
+		h1, h2, h3, h4, p {
+			text-align: center;
+		}
+	}
+}

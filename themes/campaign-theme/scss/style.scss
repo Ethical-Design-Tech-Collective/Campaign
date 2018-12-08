@@ -1,0 +1,440 @@
+/*
+*	Theme Name: Campaign Theme
+*	Author: DE
+*	Version: 1.0
+*	Text Domain: campaign-theme
+*	Domain Path: /languages
+*/
+   
+@import 'variables';
+@import 'reset'; 
+@import 'basics';  
+@import 'sections'; 
+@import 'site-header'; 
+@import 'site-footer'; 
+@import 'give-form'; 
+@import 'wp-fixes';  
+@import 'main-section';
+@import 'media';
+
+.share-panel {
+	position: fixed;
+	top: 0;
+	right: 0; 
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 200;
+
+	.share-modal {
+		@include card;
+		border-radius: 2px;
+		position: absolute;
+		display: block;
+		width: 400px;
+		max-width: 100%;
+		max-height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		padding: 44px 70px 40px 70px;
+		text-align: center;
+	}
+
+	h3 {
+		
+	}
+
+	i {
+		font-size: 38px;
+		padding: 12px;
+		color: $brand;
+	}
+
+	.close {
+		position: absolute;
+		top: 6px;
+		right: 10px;
+
+		i {
+			font-size: 26px;
+			color: #aaa;
+			cursor: pointer;
+
+			&:hover {
+				color: #666;
+			}
+		}
+	}
+}
+
+.share-it {
+	display: inline-block;
+	font-size: 22px; 
+	line-height: 26px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	span {
+		color: $brand-dark;
+		display: inline-block;
+		font-weight: 500;
+		border-bottom: 2px solid $brand-dark;
+	}
+
+	img {
+		width: 28px;
+		height: 28px;
+		margin-right: 6px;
+		margin-top: -1px;
+	}
+
+	&:hover {
+
+		&.subtle {
+			opacity: 1;
+		}
+
+		img {
+			width: 30px;
+			height: 30px;
+			margin: -2px 5px -1px -1px;
+		}
+
+		span {
+			color: $brand;
+			border-color: $brand;
+		}
+	}
+
+	&.light {
+		span {
+			color: white;
+			border-color: white;
+		}
+
+		&:hover {
+			span {
+				color: white;
+			}
+		}
+	}
+
+	&.subtle {
+		opacity: 0.5;
+	}
+}
+
+.container.quote {
+	padding: 60px 50px;
+	padding-bottom: 60px;
+	@include card;
+
+	h3 {
+		font-style: italic;
+	} 
+}
+
+.input-group > * {
+	margin-bottom: 14px;
+}
+
+h1, h2, h3, h4, p, ul {
+	margin-bottom: 26px;
+}
+ 
+.separator {
+	height: 2px;
+	background: rgba($brand-dark, 0.25);
+}
+  
+ul.bold-list { 
+	margin-top: 68px; 
+	border-top: 2px solid rgba($brand-dark, 0.25);
+
+	li {
+		border-bottom: 2px solid rgba($brand-dark, 0.25);
+
+		h2,
+		h3 {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $brand;
+			display: block;
+			padding-top: 16px;
+			padding-bottom: 16px; 
+			padding-right: 60px;
+			padding-left: 24px;
+
+			&:hover {
+				text-decoration: none;
+				color: $brand;
+
+				&:before {
+					right: 28px;
+				}
+			}
+
+			&:before {
+				color: $brand;
+				display: inline-block;
+			    font-style: normal;
+			    font-variant: normal;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900;
+				font-size: 28px;
+				content: "\f061";
+				position: absolute;
+				top: 50%;
+				height: 20px;
+				line-height: 20px;
+				margin-top: -10px;
+				right: 34px;
+			}
+		}
+	}
+}
+
+.candidates-grid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 0;
+	margin-left: -10px;
+    margin-right: -10px;
+
+	.candidate {
+		display: inline-block;
+		width: 25%;
+		padding: 40px 20px;
+		text-align: center;
+
+		.image-cont {
+			width: 160px;
+			height: 160px;
+			border-radius: 100px;
+			overflow: hidden;
+			display: block;
+			margin-left: auto; 
+			margin-right: auto;
+			background: #ced3dc;
+			margin-bottom: 22px;
+		}
+
+		img {
+			display: block;
+			height: 160px;
+			width: 160px;
+			margin-bottom: 20px;
+		}
+
+		h3 { 
+			font-size: 21px;
+			margin-bottom: 8px;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 3px;
+		}
+
+		&:before {
+			content: '';
+			@include card;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			bottom: 10px;
+			left: 10px;
+		}
+
+		a {
+			margin-top: 4px;
+			font-size: 16px;
+		}
+	}
+}
+ 
+.top-section.candidate {
+	padding-bottom: 0;
+	.container {
+		text-align: center;
+
+		p {
+			font-weight: 500;
+		}
+
+		p, h4 {
+			color: #677084;
+		}
+	}
+
+	.profile-image {
+		width: 200px;
+		width: 200px; 
+		border: 3px solid white;
+		border-radius: 100px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto; 
+		bottom: -100px;
+    	margin-top: -80px;
+    	z-index: 50;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.candidate-excerpt {
+	padding-top: 140px;
+	padding-bottom: 0;
+
+	p {
+		font-size: 22px;
+		font-weight: 500;
+		color: $brand;
+	}
+}
+
+.main-actions { 
+	.column {
+		font-size: 18px;
+		padding-top: 8px;
+		padding-bottom: 12px;
+
+		h3 {
+			font-size: 20px;
+			font-weight: 500;
+		}
+ 
+		&.first {
+			padding-right: 30px;
+			width: 48%;
+
+			.give_warning {
+				display: none;
+			}
+		}
+
+		&.second {
+			width: 26%;
+			padding-left: 30px;
+			padding-right: 30px;
+			border-left: 2px solid rgba(white, 0.3);
+
+			h3 {
+				min-height: 153px;
+			}
+		}
+
+		&.third { 
+			width: 26%;
+			padding-left: 30px;
+			border-left: 2px solid rgba(white, 0.3);
+			
+			h3 {
+				min-height: 153px;
+			}
+		}
+	}
+}
+
+.events {
+	padding-top: 60px;
+
+	.event-item {
+		@include card;
+		padding: 40px 40px 40px 190px;
+		margin-bottom: 30px;
+
+		.fancy-date {
+			position: absolute;
+			top: 48px;
+			left: 40px;
+			width: 110px;
+			height: 110px;
+			background: $grayer-background;
+			border-radius: 100px;
+			text-align: center;
+			padding-top: 20px;
+
+			.month {
+				display: block;
+				font-size: 24px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+
+			.day {
+				display: block;
+				font-size: 48px;
+				font-weight: 400;
+			}
+		}
+
+		h1 {
+			font-size: 34px;
+		}
+
+		h4 {
+			font-size: 20px;
+		}
+	}
+}
+
+.details-with-icons {
+		h2, h3, h4 {
+		display: inline-block;
+		margin-right: 20px;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.news {
+	.news-item { 
+		padding-left: 420px;
+
+		img {
+			position: absolute;
+			left: 40px;
+			top: 6px;
+			width: 330px;
+			height: auto;
+			border-radius: 2px;
+		}
+	}
+}
+
+.give-page-section {
+	.give-form-wrap {
+		margin-top: 52px;
+	}
+} 
+
+/* ========================= Responsive styles ========================= */
+
+
+@include media-queries;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

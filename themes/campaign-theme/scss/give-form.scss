@@ -1,0 +1,96 @@
+
+#give_error_test_mode {
+	display: none !important;
+}
+
+.give-form-wrap .give-btn {
+  border: 2px solid #aaa;
+  font-weight: bold;
+  color: #666;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+.give-form-title {
+  display: none;
+} 
+
+.main-actions-section .et_pb_text_inner {
+	padding-bottom: 0;
+}
+
+.give-form-wrap {
+	text-align: left;
+}
+
+form.give-form {
+	margin-bottom: 0;
+}
+
+.give-form-wrap form[id*=give-form] .give-donation-amount #give-amount {
+	border: 2px solid #aaa !important;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.give-form-wrap .give-donation-amount .give-currency-symbol {
+ 	border: 2px solid #aaa !important;
+  border-left: none !important;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px; 
+}
+
+.give-form-wrap form[id*=give-form] .give-donation-amount .give-currency-symbol {
+  height: 40px;
+}
+
+.give-form-wrap form[id*=give-form] .give-donation-amount #give-amount {
+  height: 40px;
+}
+
+.give-form-wrap .give-btn.give-btn-modal {
+  border-color: #ec4312;
+  padding: 10px 18px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ec4312;
+  background: none;
+}
+
+.give-btn.give-btn-modal:hover {
+  background: #eb4424;
+  color:#fff;
+}
+
+.section.dark,
+.section.warm-dark {
+  .give-form-wrap .give-btn:hover {
+    background: #eee;
+    color: #292F3C;
+  }
+
+  .give-form-wrap .give-btn.give-btn-modal {
+    color: #ec4312;
+
+    &:hover {
+        background: #ec4312;
+        color: white;
+    }
+  }
+
+  .give-form-wrap .give-donation-amount .give-currency-symbol,
+  .give-form-wrap .give-btn {
+    background: none;
+      color: #eee;
+      font-weight: 500;
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  }
+}
+
+.give-form-wrap #give-donation-level-button-wrap {
+  margin-bottom: 0;
+}
+
+
+
+

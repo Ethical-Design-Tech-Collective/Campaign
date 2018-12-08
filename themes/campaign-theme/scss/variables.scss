@@ -1,0 +1,25 @@
+$header-height: 60px;
+$brand: #EB4424;
+$brand-dark: #292F3C;
+$brand-darkish: #292F3C;
+$light-background: #e6eaef;
+$grayer-background: #d7dee4;
+$warm-dark: #3c252d;
+
+@mixin card() {
+	background: white;
+	//border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin non-select() {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+} 

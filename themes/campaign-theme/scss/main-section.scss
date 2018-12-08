@@ -1,0 +1,96 @@
+.section.main {
+    min-height: 100vh;
+    padding-top: 126px;
+    margin-top: -60px;
+    background-size: cover;
+
+    .share-it span {
+    	font-weight: 400;
+    }
+
+    .container.subscribe-container {
+		margin-top: 7vh;
+		font-size: 0;
+
+		.left-part,
+		.right-part {
+			display: inline-block;
+		}
+
+		.left-part {
+			width: 64%;
+			padding-right: 50px;
+
+			h1 {
+				font-size: 74px;
+				text-align: left;
+				line-height: 1.1;
+			}
+
+			p {
+				font-size: 22px;
+			}
+		}
+
+		.right-part {
+			width: 36%;
+			margin-top: 56px;
+			margin-bottom: 60px;
+
+			.standard-input,
+			.standard-button {
+				width: 100%;
+				max-width: 340px;
+				font-size: 20px;
+			}
+
+			.standard-button {
+				display: inline-block;
+				line-height: 26px;
+				white-space: normal;
+				font-size: 22px;
+			}
+		}
+	}
+
+	.bottom-link-container {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		a {
+			display: inline-block;
+			color: white;
+			padding: 20px 66px 38px 38px;
+			font-size: 20px;
+	 
+			&:hover {
+				text-decoration: none;
+
+				&:before {
+					top: 29px;
+				}
+			}
+
+			&:before {
+				display: inline-block;
+			    font-style: normal;
+			    font-variant: normal;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900;
+				font-size: 18px;
+				content: "\f063";
+				position: absolute;
+				top: 25px;
+				height: 20px;
+				line-height: 20px;
+				right: 34px;
+				-webkit-transition: top .2s;
+	    		transition: top .2s;
+			}
+		}
+	}
+}

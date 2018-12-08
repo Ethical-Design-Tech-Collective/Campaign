@@ -1,0 +1,230 @@
+/*
+	Theme Name: Campaign Theme
+	Author: DE
+	Version: 1.0
+*/
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* SANITY */
+
+* {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  vertical-align: top;
+}
+
+body * {
+  position: relative;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+div, span {
+  cursor: inherit;
+}
+
+text {
+  cursor: default;
+}
+
+button, input, textarea {
+  border: 0;
+  margin: 0;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: 0;
+}
+
+body {
+	margin-top: 56px;
+}
+
+body {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	line-height: 1.6;
+}
+
+input {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+h1 { font-size: 40px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 20px; }
+
+p, li { font-size: 18px; }
+
+input { font-size: 18px; }
+
+p a,
+ul a {
+	font-weight: 500;
+}
+
+p a:hover,
+ul a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: #2e74ce;
+}
+
+hr {
+	margin: 0;
+	border: 2px solid #ccc;
+}
+
+input.standard {
+	display: block;
+	height: 44px;
+	border: 2px solid #bfbfbf;
+	background: #f6f6f6;
+	border-radius: 2px;
+}
+
+input.standard:focus {
+	display: block;
+	height: 44px;
+	border: 2px solid #888;
+}
+
+input.standard[type='text'] {
+	width: 320px;
+	padding: 0 12px;
+}
+
+input.standard[type='submit'] {
+	min-width: 100px;
+	font-weight: bold;
+	color: #EB4424;
+	border-color: #EB4424;
+	background: white;
+	padding: 0 16px;
+	cursor: pointer;
+}
+
+input.standard[type='submit']:hover {
+	background: #EB4424;
+	color: white;
+}
+
+i, i.fa {
+	line-height: inherit;
+}
+
+.section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.container {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.container.narrow {
+	max-width: 860px;
+}
+
+header.site-header {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 56px;
+	background: white;
+	top: 0;
+	border-bottom: 2px solid #ccc;
+	line-height: 56px;
+	vertical-align: middle;
+	z-index: 10;
+}
+
+.customize-support .site-header {
+	margin-top: 30px;
+}
+
+header .logo {
+	display: inline-block;
+}
+
+header .menu {
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+}
+
+header ul {
+	font-size: 0;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li a {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.input-group > * {
+	margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, p, ul {
+	margin-bottom: 18px;
+}
+
+.separator {
+	height: 2px;
+	background: #ccc;
+}
+
+
+
+

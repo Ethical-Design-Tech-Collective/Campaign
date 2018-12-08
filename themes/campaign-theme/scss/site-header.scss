@@ -1,0 +1,110 @@
+.site-header {
+	position: fixed;
+	display: block;
+	width: 100%; 
+	height: $header-height;
+	background: white;
+	top: 0;
+	line-height: $header-height; 
+	vertical-align: middle;
+	z-index: 100; 
+	-webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+
+	.logo {
+		display: inline-block; 
+		margin-left: -5px;
+
+		img {
+			height: $header-height - 16px;
+			margin-top: 9px;
+		}
+	}
+
+	.menu {
+		display: inline-block;
+		position: absolute;
+		right: 40px;
+		top: 0;
+	}
+
+	ul {
+		font-size: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+				padding: 0 11px;
+				color: $brand-darkish;
+				font-size: 16px;
+				line-height: $header-height;
+				font-weight: 500;
+
+				span.asterisk {
+					color: $brand;
+					margin-left: 2px;
+					margin-right: 2px;
+				}
+
+				&:hover {
+					text-decoration: none;
+					color: $brand;
+				}
+			}
+
+			&.nav-button {
+				margin-left: 14px;
+
+				a {
+					line-height: 32px;
+					margin-top: 13px;
+					border: 2px solid $brand;
+					border-radius: 2px;
+					color: $brand;
+					padding: 0 14px;
+
+					&:hover {
+						background: $brand;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	.menu-icon {
+		position: absolute;
+		top: 0;
+		right: 40px;
+		font-size: 19px;
+		display: none;
+		font-weight: 500;
+		text-transform: uppercase;
+		cursor: pointer;
+		-webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */
+	     -khtml-user-select: none; /* Konqueror HTML */
+	       -moz-user-select: none; /* Firefox */
+	        -ms-user-select: none; /* Internet Explorer/Edge */
+	            user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+
+		i {
+			font-size: 18px;
+			line-height: inherit;
+			margin-right: 10px;
+		}
+
+		&:hover {
+			color: $brand;
+		}
+	}
+}
+
+
+
+
+
+

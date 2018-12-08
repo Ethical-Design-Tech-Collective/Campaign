@@ -1,0 +1,91 @@
+.bottom-signup {
+	background-size: cover;
+	background-position: 50% 25%;
+	font-size: 0;
+
+	.container {
+		padding-top: 14px;
+	}
+
+	h3 {
+		margin-bottom: 36px;
+		text-align: center;
+	}
+
+	._form_element {
+		display: inline-block;
+		width: 34% !important;
+		margin-right: 2% !important;
+	}
+
+	._button-wrapper {
+		display: inline-block;
+		width: 22% !important;
+		min-width: 0;
+		padding-left: 0;
+		padding-right: 0;
+
+		.standard-button {
+			margin-left: 0;
+		}
+	}
+
+	/*.standard-input {
+		display: inline-block;
+		width: 36%;
+		margin-right: 2%;
+	}
+
+	.standard-button {
+		display: inline-block;
+		width: 22%;
+		min-width: 0;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}*/
+}
+
+footer {
+	.section.footer-section {
+		padding-bottom: 80px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	ul {
+		margin-bottom: 60px;
+	}
+
+	li {
+		width: 100%;
+		white-space: normal;
+		font-size: 16px;
+		margin-bottom: 6px;
+
+		a {
+			font-weight: 400;
+		}
+	}
+
+	h4 {
+		color: #a7828f;
+	}
+
+	h5 {
+		font-weight: 500;
+		color: #a7828f;
+	}
+
+	.footer-column {
+		display: inline-block;
+		margin-right: 80px;
+	}
+
+	.far, .fab {
+		line-height: inherit !important;
+		margin-right: 6px;
+	}
+}

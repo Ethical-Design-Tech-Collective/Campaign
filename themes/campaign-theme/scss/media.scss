@@ -1,0 +1,257 @@
+@mixin media-queries {
+
+	@media only screen and (max-width: 1040px) {
+		.top-section.main .container.subscribe-container {
+			.left-part {
+				h1 {
+					font-size: 58px;
+				}
+
+				p {
+					font-size: 18px;
+				}
+			}
+
+			.right-part {
+				.standard-input,
+				.standard-button {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 959px) {
+		.site-header .menu {
+			display: block !important;
+		}
+
+		.menu-icon {
+			display: none !important;
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
+		.menu-icon {
+			&.show-menu {
+				display: block; 
+			}
+		}
+
+		.site-header .menu {
+			background: #f5f6f9; 
+			border-radius: 0 0 2px 2px;
+			top: $header-height;
+			display: none;
+			right: 0;
+		    width: 380px;
+		    max-width: 100%;
+		    height: 100vh;
+		    padding-bottom: 100px;
+		    overflow-y: auto;
+
+			ul li {
+				display: block; 
+
+				a {
+					padding-left: 20px;
+					padding-right: 20px;
+					width: 260px;
+					margin-top: 6px;
+					font-size: 17px;
+					font-weight: 500;
+				}
+
+				&.nav-button {
+					margin-left: 0;
+
+					a {
+						width: auto;
+		    			display: block;
+		    			margin-left: 20px;
+		    			margin-right: 20px;
+		    			padding-top: 4px;
+		    			padding-bottom: 4px;
+					}
+				}
+			}
+		}
+
+		.main-actions {
+			.column.first {
+				display: block;
+				width: 100%;
+				border-bottom: 2px solid rgba(white, 0.3);
+				text-align: center;
+				padding: 20px 0 50px 0;
+
+				.give-form-wrap {
+					text-align: center;
+				}
+
+				.give-total-wrap {
+					display: inline-block;
+				}
+
+				#give-donation-level-button-wrap {
+					width: fit-content;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			.column.second {
+				display: block;
+				width: 100%;
+				text-align: center;
+				border-left: none;
+				border-bottom: 2px solid rgba(white, 0.3);
+				padding: 60px 0;
+				
+				h3 {
+					min-height: 0;
+				}
+			}
+
+			.column.third {
+				display: block;
+				width: 100%;
+				text-align: center;
+				border-left: none;
+				padding: 60px 0 20px 0;
+				
+				h3 {
+					min-height: 0;
+				}
+			}
+		}
+
+		.candidates-grid {
+			.candidate {
+				width: 50%; 
+			}
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.container.quote {
+			padding-left: 20px;
+			padding-right: 20px;			
+		}
+
+		.site-header {
+			.menu-icon {
+				right: 20px;
+			}
+		}
+
+		.top-section.main .container.subscribe-container {
+			margin-top: 40px;
+			text-align: center;
+
+			.left-part {
+				padding-right: 0;
+
+				h1 {
+					text-align: center;
+				}
+			}
+
+			.right-part {
+				.standard-input {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.standard-button {
+    				display: block;
+				    margin-left: auto;
+				    margin-right: auto;
+    			}
+			}
+
+			.left-part, .right-part {
+				h1 {
+					font-size: 46px;
+				}
+
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 620px) {
+		.candidates-grid {
+			.candidate {
+				width: 100%; 
+			}
+		}
+	}
+
+	@media only screen and (max-width: 567px) {
+		h1 { font-size: 40px; }
+
+		h2 { font-size: 28px; }
+
+		h3 { font-size: 20px; }
+
+		h4 { font-size: 18px; }
+
+		p, li { font-size: 16px; }
+ 
+		.share-it {
+			font-size: 18px;
+			line-height: 22px;
+
+				img {
+					width: 24px;
+					height: 24px;
+				}
+
+				&:hover {
+					img {
+						width: 26px;
+						height: 26px;
+						margin: -2px 5px -1px -1px;
+					}
+				}
+		}
+
+		.standard-input {
+			height: 44px;
+		}
+
+		.candidate-excerpt p { font-size: 18px }
+
+		.section.main .bottom-link-container {
+			display: none;
+		}
+
+		.bottom-signup {
+			._form_element {
+				display: block;
+				width: 100% !important;
+    			max-width: 340px;
+    			margin-left: auto;
+    			margin-right: auto;
+			}
+
+			._button-wrapper {
+				display: block;
+				width: 100% !important;
+    			margin-left: auto;
+    			margin-right: auto;
+			}
+		}
+	}
+}
+
+
+
+
